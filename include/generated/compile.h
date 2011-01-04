@@ -1,8 +1,8 @@
-/* This file is auto generated, version cranium-testkeys */
+/* This file is auto generated, version 1 */
 /* SMP PREEMPT */
 #define UTS_MACHINE "arm"
-#define UTS_VERSION "#cranium-testkeys SMP PREEMPT Mon Mar 26 16:28:14 IST 2012"
-#define LINUX_COMPILE_TIME "16:28:14"
+#define UTS_VERSION "#1 SMP PREEMPT Tue Mar 27 09:47:02 IST 2012"
+#define LINUX_COMPILE_TIME "09:47:02"
 #define LINUX_COMPILE_BY "root"
 #define LINUX_COMPILE_HOST "sarthak"
 #define LINUX_COMPILE_DOMAIN "(none)"
