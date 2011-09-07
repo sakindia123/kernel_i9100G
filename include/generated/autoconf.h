@@ -1,7 +1,7 @@
 /*
  * Automatically generated C config: don't edit
  * Linux kernel version: 2.6.35.7
- * Tue Mar 27 09:38:37 2012
+ * Tue Mar 27 10:31:30 2012
  */
 #define AUTOCONF_INCLUDED
 #define CONFIG_ARCH_OMAP 1
@@ -185,6 +185,7 @@
 #define CONFIG_REED_SOLOMON_DEC8 1
 #define CONFIG_IP_ADVANCED_ROUTER 1
 #define CONFIG_ANDROID_RAM_CONSOLE_ERROR_CORRECTION_ECC_SIZE 16
+#define CONFIG_CLEANCACHE 1
 #define CONFIG_IP6_NF_IPTABLES 1
 #define CONFIG_NLS_ISO8859_1 1
 #define CONFIG_CRYPTO_WORKQUEUE 1
