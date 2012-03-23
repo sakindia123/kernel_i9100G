@@ -1,0 +1,18 @@
+HOW TO BUILD CRANIUM KERNEL 2.6.35.7 FOR GT-I9100G
+
+1. How to Build
+	- get Toolchain
+	Visit http://www.codesourcery.com/, download and install Sourcery G++ Lite 2009sq3 toolchain for ARM EABI.
+	Extract kernel source and move into the top directory.
+        Setup correct build parameters in init.sh and build.sh
+	$ toolchain\arm-2011.03
+   	$ cd kernel/
+	$ ./init.sh
+		
+2. Output files
+	- Kernel : kernel/arch/arm/boot/zImage
+	
+3. How to make .tar binary for downloading into target.
+	- change current directory to kernel/arch/arm/boot
+	- type following command
+	$ tar cvf GT-I9100G_Kernel_Gingerbread.tar zImage
