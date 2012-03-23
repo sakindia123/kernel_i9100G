@@ -43,3 +43,7 @@ zip -r $KBUILD_BUILD_VERSION.zip *
 cp $KERNEL_PATH/arch/arm/boot/$KBUILD_BUILD_VERSION.tar $KERNEL_PATH/releasetools/tar/$KBUILD_BUILD_VERSION.tar
 rm $KERNEL_PATH/arch/arm/boot/$KBUILD_BUILD_VERSION.tar
 rm $KERNEL_PATH/releasetools/zip/zImage
+
+cd arch/arm/boot
+tar cvf cranium_kernel.tar zImage
+cp cranium_kernel.tar /home/sarthak/kernel_i9100G
