@@ -166,6 +166,8 @@ static struct omap_opp_def __initdata omap44xx_opp_def_list[] = {
 	OMAP_OPP_DEF("gpu", true, 153600000, 1025000),
 	/* SGX OPP2 - OPP100 */
 	OMAP_OPP_DEF("gpu", true, 307200000, 1200000),
+        /* SGX OPP3 - OPP150 */
+        OMAP_OPP_DEF("gpu", true, 384000000, 1200000),
 	/* HSI OPPLP - DPLL cascading */
 	OMAP_OPP_DEF("hsi", false, 98304000, 1011000),
 
