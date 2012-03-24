@@ -24,7 +24,7 @@ cd  modules
 ./strip.sh
 
 echo "Copying Modules to Initramfs Directory"
-cp pcbc.ko bthid.ko gspca_main.ko gfx_vout_mod.ko dhd.ko scsi_wait_scan.ko hsi_char.ko bt_drv.ko fm_drv.ko gps_drv.ko st_drv.ko /home/sarthak/Downloads/initramfs/lib/modules
+cp pcbc.ko bthid.ko gspca_main.ko gfx_vout_mod.ko dhd.ko scsi_wait_scan.ko hsi_char.ko bt_drv.ko fm_drv.ko gps_drv.ko st_drv.ko /home/sarthak/kernel_i9100G/initramfs/lib/modules
 
 echo "Initiating Kernel Compilation"
 cd ../

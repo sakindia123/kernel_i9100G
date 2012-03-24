@@ -13,9 +13,9 @@ KERNEL_PATH="/home/kernel_i9100G"
 
 # Set toolchain and root filesystem path
 TOOLCHAIN="/home/sarthak/Downloads/Toolchains/arm-2009q3/bin/arm-none-linux-gnueabi-"
-ROOTFS_PATH="/home/sarthak/Downloads/initramfs"
+ROOTFS_PATH="/home/sarthak/kernel_i9100G/initramfs"
 
-export KBUILD_BUILD_VERSION="Cranium-testkeys#1"
+export KBUILD_BUILD_VERSION="Cranium-testkeys"
 export KERNELDIR=$KERNEL_PATH
 
 echo "Cleaning latest build"
