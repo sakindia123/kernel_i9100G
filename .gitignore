@@ -55,11 +55,11 @@ modules.builtin
 #
 # Generated include files
 #
-include/config/auto.conf
-include/linux/version.h
-include/generated/autoconf.h
-include/generated/compile.h
-include/config/tristate.conf
+*include/config/auto.conf
+*include/linux/version.h
+*include/generated/autoconf.h
+*include/generated/compile.h
+*include/config/tristate.conf
 
 # stgit generated dirs
 patches-*
@@ -79,6 +79,8 @@ GSYMS
 GTAGS
 
 *.orig
+*zImage
+*Image
 *~
 \#*#
 

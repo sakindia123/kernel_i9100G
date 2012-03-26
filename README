@@ -1,11 +1,11 @@
-HOW TO BUILD CRANIUM KERNEL 2.6.35.7 FOR GT-I9100G
+HOW TO BUILD CRANIUM KERNEL 2.6.35.7 FOR Samsung Galaxy S2 GT-I9100G
 
 1. How to Build
 	- get Toolchain
-	Visit http://www.codesourcery.com/, download and install Sourcery G++ Lite 2009sq3 toolchain for ARM EABI.
+	Visit http://www.codesourcery.com/, download and install Sourcery G++ Lite 2010q1 toolchain for ARM EABI.
 	Extract kernel source and move into the top directory.
-        Setup correct build parameters in init.sh and build.sh
-	$ toolchain\arm-2011.03
+        Setup correct build parameters in Makefile,init.sh and build.sh
+	$ toolchain\arm-2010sq1
    	$ cd kernel/
 	$ ./init.sh
 		
@@ -16,5 +16,8 @@ HOW TO BUILD CRANIUM KERNEL 2.6.35.7 FOR GT-I9100G
 	- change current directory to kernel/arch/arm/boot
 	- type following command
 	$ tar cvf GT-I9100G_Kernel_Gingerbread.tar zImage
+        -Flash as PDA in Odin Multi Downloader by Samsung whilst in download mode
+        
+4. ENJOY FLASHING!
 
 
