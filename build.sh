@@ -1,5 +1,4 @@
 #!/bin/bash
-#Thanks to Hanny Liu for the build script and helping me set up kernel!
 
 if [ -e zImage ]; then
 	rm zImage
@@ -9,13 +8,13 @@ rm compile.log
 
 # Set Default Path
 TOP_DIR=$PWD
-KERNEL_PATH="/home/kernel_i9100G"
+KERNEL_PATH="/home/sarthak/rebase"
 
 # Set toolchain and root filesystem path
 TOOLCHAIN="/home/sarthak/Downloads/Toolchains/arm-2009q3/bin/arm-none-linux-gnueabi-"
-ROOTFS_PATH="/home/sarthak/kernel_i9100G/initramfs"
+ROOTFS_PATH="/home/sarthak/Downloads/initramfs"
 
-export KBUILD_BUILD_VERSION="Cranium-testkeys"
+export KBUILD_BUILD_VERSION="cranium-testkeys"
 export KERNELDIR=$KERNEL_PATH
 
 echo "Cleaning latest build"

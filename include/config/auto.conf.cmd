@@ -16,6 +16,11 @@ deps_config := \
 	mm/Kconfig.debug \
 	lib/Kconfig.debug \
 	arch/arm/Kconfig.debug \
+	samsung/vibetonz/Kconfig \
+	samsung/param/Kconfig \
+	samsung/fm_si4709/Kconfig \
+	samsung/battery/Kconfig \
+	samsung/Kconfig \
 	fs/dlm/Kconfig \
 	fs/nls/Kconfig \
 	fs/partitions/Kconfig \

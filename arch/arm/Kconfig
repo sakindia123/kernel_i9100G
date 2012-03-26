@@ -1686,6 +1686,10 @@ source "drivers/Kconfig"
 
 source "fs/Kconfig"
 
+## [[BEGIN>>> OMAP-Samsung Specific Configurations
+source "samsung/Kconfig"
+## OMAP-Samsung Specific Configurations <<<END]]
+
 source "arch/arm/Kconfig.debug"
 
 source "security/Kconfig"

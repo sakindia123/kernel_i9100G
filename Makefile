@@ -350,6 +350,10 @@ LINUXINCLUDE    := -I$(srctree)/arch/$(hdr-arch)/include -Iinclude \
                    $(if $(KBUILD_SRC), -I$(srctree)/include) \
                    -include include/generated/autoconf.h
 
+## [[BEGIN>>> OMAP-Samsung Specific Configurations
+-include samsung/sec_include.mk
+## OMAP-Samsung Specific Configurations <<<END]]
+
 KBUILD_CPPFLAGS := -D__KERNEL__
 
 KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
@@ -481,7 +485,7 @@ scripts: scripts_basic include/config/auto.conf include/config/tristate.conf
 
 # Objects we will link into vmlinux / subdirs we need to visit
 init-y		:= init/
-drivers-y	:= drivers/ sound/ firmware/ 
+drivers-y	:= drivers/ sound/ firmware/ samsung/
 net-y		:= net/
 libs-y		:= lib/
 core-y		:= usr/

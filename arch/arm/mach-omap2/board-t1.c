@@ -271,49 +271,18 @@ static struct switch_dev switch_dock = {
 
 static void omap4_deskdock_cb(bool attached)
 {
-	union power_supply_propval value;
-	struct power_supply *psy = power_supply_get_by_name("sec-charger");
-	int ret;
-	
-	printk("\nBoard file [FSA9480]: DESK DOCK Callback \n");
-	
-	if (attached) {
+	if (attached)
 		switch_set_state(&switch_dock, 1);
-		value.intval = POWER_SUPPLY_TYPE_CARDOCK;
-	}
-	else {
+	else
 		switch_set_state(&switch_dock, 0);
-		value.intval = POWER_SUPPLY_TYPE_BATTERY;
-	}
-
-	if (psy) {
-		ret = psy->set_property(psy, POWER_SUPPLY_PROP_CHARGE_TYPE, &value);
-		if (ret)
-			printk("%s: fail to set power_supply property\n", __func__);
-	}
 }
 
 static void omap4_cardock_cb(bool attached)
 {
-	union power_supply_propval value;
-	struct power_supply *psy = power_supply_get_by_name("sec-charger");
-	int ret;
-	
-	printk("\nBoard file [FSA9480]: CARKIT Callback \n");
-
-	if (attached) {
+	if (attached)
 		switch_set_state(&switch_dock, 2);
-		value.intval = POWER_SUPPLY_TYPE_CARDOCK;
-	} else {
+	else
 		switch_set_state(&switch_dock, 0);
-		value.intval = POWER_SUPPLY_TYPE_BATTERY;
-	}
-	
-	if (psy) {
-		ret = psy->set_property(psy, POWER_SUPPLY_PROP_CHARGE_TYPE, &value);
-		if (ret)
-			printk("%s: fail to set power_supply property\n", __func__);
-	}
 }
 #endif
 
@@ -2595,19 +2564,19 @@ static struct omap_volt_pmic_info omap_pmic_iva = {
 
 static struct omap_volt_vc_data vc_config = {
 	/*VDD_MPU*/
-	.vdd0_on = 1400000,	/* 1.375v */
-	.vdd0_onlp = 1025000,	/* 1.375v */
-	.vdd0_ret = 750000,	/* 0.86v */
+	.vdd0_on = 1375000,	/* 1.375v */
+	.vdd0_onlp = 1375000,	/* 1.375v */
+	.vdd0_ret = 860000,	/* 0.86v */
 	.vdd0_off = 0,		/* 0 v */
 	/*VDD_CORE*/
-	.vdd1_on = 1291000,	/* 1.2v */
-	.vdd1_onlp = 950000,	/* 1.2v */
-	.vdd1_ret = 750000,	/* 0.86v */
+	.vdd1_on = 1200000,	/* 1.2v */
+	.vdd1_onlp = 1200000,	/* 1.2v */
+	.vdd1_ret = 860000,	/* 0.86v */
 	.vdd1_off = 0,		/* 0 v */
 	/*VDD_IVA*/
-	.vdd2_on = 1127000,	/* 1.188v */
-	.vdd2_onlp = 962000,	/* 1.188v */
-	.vdd2_ret = 750000,	/* .86v */
+	.vdd2_on = 1188000,	/* 1.188v */
+	.vdd2_onlp = 1188000,	/* 1.188v */
+	.vdd2_ret = 860000,	/* .86v */
 	.vdd2_off = 0,		/* 0 v */
 };
 
