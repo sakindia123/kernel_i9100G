@@ -18,9 +18,3 @@ HOW TO BUILD CRANIUM KERNEL 2.6.35.7 FOR GT-I9100G
 	$ tar cvf GT-I9100G_Kernel_Gingerbread.tar zImage
 
 
-=============================================== DEVELOPERS ====================================================================
-
-Kernel developed by-
-
-1)sakindia123 AKA Sarthak Acharya
-2)hanny562 AKA Hanny Liu
