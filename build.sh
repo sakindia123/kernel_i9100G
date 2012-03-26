@@ -11,7 +11,7 @@ TOP_DIR=$PWD
 KERNEL_PATH="/home/sarthak/kernel_i9100G"
 
 # Set toolchain and root filesystem path
-TOOLCHAIN="/home/sarthak/Downloads/Toolchains/arm-2009q3/bin/arm-none-linux-gnueabi-"
+TOOLCHAIN="/home/sarthak/Downloads/Toolchains/arm-2010q1/bin/arm-none-eabi-"
 ROOTFS_PATH="/home/sarthak/Downloads/initramfs"
 
 export KBUILD_BUILD_VERSION="cranium-testkeys"
