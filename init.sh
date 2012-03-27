@@ -1,5 +1,6 @@
 rm .config
 make cranium_defconfig
+git gc
 
 echo "============================================== CRANIUM KERNEL COMPILER ==============================================================="
 
