@@ -283,6 +283,7 @@ static void __maybe_unused pcpu_next_pop(struct pcpu_chunk *chunk,
 static void *pcpu_mem_alloc(size_t size)
 {
 	if (size <= PAGE_SIZE)
+        return kzalloc(size, GFP_KERNEL);
 	else 
         return vzalloc(size);
 }
