@@ -43,3 +43,4 @@ cp $KERNEL_PATH/arch/arm/boot/$KBUILD_BUILD_VERSION.tar $KERNEL_PATH/releasetool
 rm $KERNEL_PATH/arch/arm/boot/$KBUILD_BUILD_VERSION.tar
 rm $KERNEL_PATH/releasetools/tar/zImage
 
+rm vmlinux vmlinux.o .tmp_vmlinux1 .tmp_vmlinux2
