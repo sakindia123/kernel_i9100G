@@ -153,6 +153,14 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	 scaling for workloads that are latency sensitive, typically interactive
 	 workloads..
 
+config CPU_FREQ_DEFAULT_GOV_GALLIMAUFRY
+	bool "gallimaufry"
+	select CPU_FREQ_GOV_GALLIMAUFRY
+	help
+	 A pimped out ondemand governor.
+         This features earlysuspend, hotplugging, a
+         2-phase algo, and tweaks to make it more aggressive.
+
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
@@ -283,6 +291,13 @@ config CPU_FREQ_GOV_INTERACTIVE
 	 'interactive' - This driver adds a dynamic cpufreq policy governor.
 	 Designed for low latency burst workloads. Scaling it done when coming
 	 out of idle instead of polling.
+
+config CPU_FREQ_GOV_GALLIMAUFRY
+	tristate "'gallimaufry' governor"
+  	depends on CPU_FREQ
+	help
+	   Help is a lie.
+	   If in doubt, say N.
 
 config CPU_FREQ_MIN_TICKS
 	int "Ticks between governor polling interval."
