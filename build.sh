@@ -8,7 +8,7 @@ rm compile.log
 
 # Set Default Path
 TOP_DIR=$PWD
-KERNEL_PATH="/home/sarthak/kernel_i9100G"
+KERNEL_PATH="/home/sarthak/new/kernel_i9100G"
 
 # Set toolchain and root filesystem path
 TOOLCHAIN="/home/sarthak/Downloads/Toolchains/arm-2009q3/bin/arm-none-linux-gnueabi-"
