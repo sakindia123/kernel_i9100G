@@ -22,13 +22,16 @@ cp drivers/staging/ti-st/st_drv.ko modules
 cp samsung/param/param.ko modules
 cp samsung/fm_si4709/Si4709_driver.ko modules
 cp samsung/vibetonz/vibetonz.ko modules
+cp fs/cifs/cifs.ko modules
+cp samsung/j4fs/j4fs.ko modules
+cp samsung/param/param.ko modules
 
 echo "Stripping Modules"
 cd  modules
 ./strip.sh
 
 echo "Copying Modules to Initramfs Directory"
-cp pcbc.ko bthid.ko gspca_main.ko gfx_vout_mod.ko dhd.ko scsi_wait_scan.ko hsi_char.ko bt_drv.ko fm_drv.ko gps_drv.ko st_drv.ko param.ko Si4709_driver.ko vibetonz.ko /home/sarthak/Downloads/initramfs/lib/modules
+cp pcbc.ko bthid.ko gspca_main.ko gfx_vout_mod.ko dhd.ko scsi_wait_scan.ko hsi_char.ko bt_drv.ko fm_drv.ko gps_drv.ko st_drv.ko param.ko Si4709_driver.ko vibetonz.ko cifs.ko j4fs.ko param.ko /home/sarthak/Downloads/initramfs/lib/modules
 
 echo "Initiating Kernel Compilation"
 cd ../
